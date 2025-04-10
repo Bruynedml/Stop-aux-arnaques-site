@@ -2,33 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop Arnaques - Protégez-vous</title>
+    <title>Stop Arnaques</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Stop Arnaques</h1>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
+                <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header><section id="home" class="hero">
+    </header><section id="accueil" class="container">
     <h2>Détectez et combattez les arnaques en ligne</h2>
     <p>Nous vous aidons à retrouver votre argent et identifier les fraudeurs.</p>
-    <a href="#contact" class="btn">Faites votre demande</a>
+    <a href="#contact" class="button">Faites votre demande</a>
 </section>
 
-<section id="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>Experts en cybersécurité, nous traquons les arnaques et aidons les victimes à obtenir justice.</p>
-</section>
-
-<section id="services">
+<section id="services" class="container">
     <h2>Nos Services</h2>
     <ul>
         <li>Analyse des fraudes</li>
@@ -37,25 +30,27 @@
     </ul>
 </section>
 
-<section id="contact">
+<section id="contact" class="container">
     <h2>Contactez-nous</h2>
-    <form id="contact-form">
+    <form>
         <label for="name">Nom :</label>
         <input type="text" id="name" name="name" required>
-
+        
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required>
-
-        <label for="message">Votre demande :</label>
+        
+        <label for="message">Message :</label>
         <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" class="btn">Envoyer</button>
+        
+        <button type="submit" class="button">Envoyer</button>
     </form>
 </section>
 
 <footer>
     <p>&copy; 2025 Stop Arnaques. Tous droits réservés.</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
