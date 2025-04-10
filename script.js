@@ -1,19 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() { const form = document.getElementById("contact-form");
+// script.js document.addEventListener("DOMContentLoaded", function() { // Gestion des boutons de navigation document.querySelectorAll("nav ul li a").forEach(link => { link.addEventListener("click", function(event) { event.preventDefault(); const targetId = this.getAttribute("href").substring(1); document.getElementById(targetId).scrollIntoView({ behavior: "smooth" }); }); });
 
-form.addEventListener("submit", function(event) {
+// Gestion du formulaire de contact
+document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (name === "" || email === "" || message === "") {
-        alert("Veuillez remplir tous les champs.");
-        return;
-    }
-
     alert("Votre message a bien été envoyé ! Nous vous répondrons sous peu.");
-    form.reset();
+    this.reset();
 });
 
 });
