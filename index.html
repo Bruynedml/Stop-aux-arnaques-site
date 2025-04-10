@@ -1,66 +1,61 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop Arnaques - Récupérez Votre Argent</title>
+    <title>Stop Arnaques - Protégez-vous</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Stop Arnaques</h1>
-        <p>Victime d’une arnaque ? Nous vous aidons à retrouver vos escrocs et récupérer votre argent.</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#services">Nos Services</a></li>
-            <li><a href="#formulaire">Déposer une Demande</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="services">
-        <h2>Nos Services</h2>
-        <ul>
-            <li>🔍 Analyse et évaluation des fraudes</li>
-            <li>💰 Traçage des escrocs et fonds volés</li>
-            <li>⚖️ Assistance juridique et recouvrement</li>
-        </ul>
-    </section>
-    
-    <section id="formulaire">
-        <h2>Déposer une Demande</h2>
-        <form action="#" method="POST">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="type">Type d’arnaque :</label>
-            <select id="type" name="type" required>
-                <option value="crypto">Crypto</option>
-                <option value="trading">Trading</option>
-                <option value="dropshipping">Dropshipping</option>
-                <option value="autre">Autre</option>
-            </select>
-            
-            <label for="message">Détail de l'arnaque :</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>📧 Email : <a href="mailto:contact@stoparnaques.fr">contact@stoparnaques.fr</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Stop Arnaques. Tous droits réservés.</p>
-    </footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header><section id="home" class="hero">
+    <h2>Détectez et combattez les arnaques en ligne</h2>
+    <p>Nous vous aidons à retrouver votre argent et identifier les fraudeurs.</p>
+    <a href="#contact" class="btn">Faites votre demande</a>
+</section>
+
+<section id="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Experts en cybersécurité, nous traquons les arnaques et aidons les victimes à obtenir justice.</p>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <ul>
+        <li>Analyse des fraudes</li>
+        <li>Recherche de fraudeurs</li>
+        <li>Accompagnement juridique</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <form id="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Votre demande :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Stop Arnaques. Tous droits réservés.</p>
+</footer>
+
 </body>
-              </html>
-  
+</html>
